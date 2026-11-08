@@ -1,0 +1,8 @@
+[
+  {"id": "A201", "name": "V.A201", "capacity": 50, "type": "LT"},
+  {"id": "A202", "name": "V.A202", "capacity": 60, "type": "LT"},
+  {"id": "B104", "name": "V.B104", "capacity": 100, "type": "LT"},
+  {"id": "K301", "name": "Lab_K301", "capacity": 45, "type": "TH"},
+  {"id": "K302", "name": "Lab_K302", "capacity": 50, "type": "TH"}
+]
+

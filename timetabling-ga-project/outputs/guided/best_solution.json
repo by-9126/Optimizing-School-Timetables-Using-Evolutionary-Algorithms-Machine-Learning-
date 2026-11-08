@@ -1,0 +1,770 @@
+{
+  "generation_found": 109,
+  "fitness_score": 1000.0,
+  "penalty": 0,
+  "hard_violations": 0,
+  "soft_violations": 0,
+  "hard_detail": {
+    "room": 0,
+    "teacher": 0,
+    "group": 0,
+    "capacity": 0
+  },
+  "soft_detail": {
+    "consecutive": 0,
+    "same_day": 0,
+    "teacher_busy": 0,
+    "student_gap": 0
+  },
+  "algorithm": "GA + Đột biến định hướng (Guided GA)",
+  "config": {
+    "mode": "guided",
+    "pop_size": 200,
+    "generations": 300,
+    "mutation_rate": 0.05,
+    "elitism": 2,
+    "tournament_k": 3,
+    "seed": 11,
+    "smart_init": true,
+    "stop_on_perfect": true,
+    "patience": null,
+    "guided_prob": 0.5,
+    "guided_candidates": 8,
+    "hc_patience": null
+  },
+  "first_valid_generation": 1,
+  "generations_run": 109,
+  "elapsed_seconds": 10.25,
+  "chromosome": [
+    [
+      0,
+      10
+    ],
+    [
+      1,
+      19
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      0,
+      22
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      3,
+      21
+    ],
+    [
+      1,
+      18
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      17
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      4,
+      22
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      1,
+      16
+    ],
+    [
+      0,
+      12
+    ],
+    [
+      1,
+      21
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      4,
+      20
+    ],
+    [
+      4,
+      19
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      0,
+      16
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      4,
+      13
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      0,
+      21
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      17
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      2,
+      20
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      4,
+      15
+    ],
+    [
+      4,
+      18
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      13
+    ],
+    [
+      3,
+      18
+    ],
+    [
+      2,
+      13
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      14
+    ],
+    [
+      2,
+      19
+    ],
+    [
+      2,
+      6
+    ]
+  ],
+  "schedule": [
+    {
+      "course_id": "MA202_02",
+      "session": 2,
+      "course_name": "Xác suất thống kê (Nhóm 2)",
+      "student_group": "23IT2",
+      "students_count": 44,
+      "teacher": "TS. Hoàng Văn E",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 2 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "IT101_01",
+      "session": 2,
+      "course_name": "Cấu trúc dữ liệu (Nhóm 1)",
+      "student_group": "24IT1",
+      "students_count": 40,
+      "teacher": "TS. Lê Văn C",
+      "room": "V.A201 (Sức chứa: 50 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 2 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "IT101_02",
+      "session": 2,
+      "course_name": "Cấu trúc dữ liệu (Nhóm 2)",
+      "student_group": "24IT2",
+      "students_count": 42,
+      "teacher": "TS. Đặng Văn G",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 2 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "IT201L_02",
+      "session": 1,
+      "course_name": "Thực hành Cơ sở dữ liệu (Nhóm 2)",
+      "student_group": "23IT2",
+      "students_count": 44,
+      "teacher": "TS. Ngô Văn I",
+      "room": "Lab_K302 (Sức chứa: 50 - Phòng Máy)",
+      "timeslot": "Thứ 2 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT101L_02",
+      "session": 1,
+      "course_name": "Thực hành Cấu trúc dữ liệu (Nhóm 2)",
+      "student_group": "24IT2",
+      "students_count": 42,
+      "teacher": "ThS. Bùi Thị H",
+      "room": "Lab_K301 (Sức chứa: 45 - Phòng Máy)",
+      "timeslot": "Thứ 2 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "PE201_01",
+      "session": 1,
+      "course_name": "Kinh tế chính trị (Ghép 23IT)",
+      "student_group": "23IT1, 23IT2",
+      "students_count": 94,
+      "teacher": "ThS. Bùi Thị H",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 2 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "MA201_02",
+      "session": 2,
+      "course_name": "Toán rời rạc (Nhóm 2)",
+      "student_group": "24IT2",
+      "students_count": 42,
+      "teacher": "TS. Hoàng Văn E",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 2 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "IT303_01",
+      "session": 2,
+      "course_name": "Công nghệ phần mềm (Nhóm 1)",
+      "student_group": "22IT1",
+      "students_count": 45,
+      "teacher": "TS. Lê Văn C",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 2 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "IT201_01",
+      "session": 1,
+      "course_name": "Cơ sở dữ liệu (Nhóm 1)",
+      "student_group": "23IT1",
+      "students_count": 50,
+      "teacher": "TS. Ngô Văn I",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 2 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "EN201_01",
+      "session": 2,
+      "course_name": "Tiếng Anh chuyên ngành (Ghép 22IT)",
+      "student_group": "22IT1, 22IT2",
+      "students_count": 93,
+      "teacher": "ThS. Trần Thị B",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 3 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "IT301L_01",
+      "session": 1,
+      "course_name": "Thực hành Trí tuệ nhân tạo (Nhóm 1)",
+      "student_group": "22IT1",
+      "students_count": 45,
+      "teacher": "ThS. Trần Thị B",
+      "room": "Lab_K301 (Sức chứa: 45 - Phòng Máy)",
+      "timeslot": "Thứ 3 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT304_01",
+      "session": 1,
+      "course_name": "Phát triển ứng dụng Web",
+      "student_group": "22IT2",
+      "students_count": 48,
+      "teacher": "ThS. Võ Thị F",
+      "room": "Lab_K302 (Sức chứa: 50 - Phòng Máy)",
+      "timeslot": "Thứ 3 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "MA202_01",
+      "session": 1,
+      "course_name": "Xác suất thống kê (Nhóm 1)",
+      "student_group": "23IT1",
+      "students_count": 50,
+      "teacher": "TS. Hoàng Văn E",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 3 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT201_02",
+      "session": 2,
+      "course_name": "Cơ sở dữ liệu (Nhóm 2)",
+      "student_group": "23IT2",
+      "students_count": 44,
+      "teacher": "TS. Ngô Văn I",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 3 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT301_02",
+      "session": 2,
+      "course_name": "Trí tuệ nhân tạo (Nhóm 2)",
+      "student_group": "22IT2",
+      "students_count": 48,
+      "teacher": "TS. Nguyễn Văn A",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 3 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "IT201_01",
+      "session": 2,
+      "course_name": "Cơ sở dữ liệu (Nhóm 1)",
+      "student_group": "23IT1",
+      "students_count": 50,
+      "teacher": "TS. Ngô Văn I",
+      "room": "V.A201 (Sức chứa: 50 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 3 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "IT202L_02",
+      "session": 2,
+      "course_name": "Thực hành Lập trình HĐT (Nhóm 2)",
+      "student_group": "23IT2",
+      "students_count": 44,
+      "teacher": "ThS. Đỗ Thị K",
+      "room": "Lab_K301 (Sức chứa: 45 - Phòng Máy)",
+      "timeslot": "Thứ 3 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "PH101_01",
+      "session": 2,
+      "course_name": "Triết học Mác-Lênin (Ghép 24IT)",
+      "student_group": "24IT1, 24IT2",
+      "students_count": 82,
+      "teacher": "ThS. Bùi Thị H",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 3 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "IT201L_01",
+      "session": 1,
+      "course_name": "Thực hành Cơ sở dữ liệu (Nhóm 1)",
+      "student_group": "23IT1",
+      "students_count": 50,
+      "teacher": "TS. Ngô Văn I",
+      "room": "Lab_K302 (Sức chứa: 50 - Phòng Máy)",
+      "timeslot": "Thứ 3 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "MA201_01",
+      "session": 2,
+      "course_name": "Toán rời rạc (Nhóm 1)",
+      "student_group": "24IT1",
+      "students_count": 40,
+      "teacher": "TS. Hoàng Văn E",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 3 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "IT101_02",
+      "session": 1,
+      "course_name": "Cấu trúc dữ liệu (Nhóm 2)",
+      "student_group": "24IT2",
+      "students_count": 42,
+      "teacher": "TS. Đặng Văn G",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 3 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "MA202_01",
+      "session": 2,
+      "course_name": "Xác suất thống kê (Nhóm 1)",
+      "student_group": "23IT1",
+      "students_count": 50,
+      "teacher": "TS. Hoàng Văn E",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 4 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "IT101L_01",
+      "session": 1,
+      "course_name": "Thực hành Cấu trúc dữ liệu (Nhóm 1)",
+      "student_group": "24IT1",
+      "students_count": 40,
+      "teacher": "ThS. Bùi Thị H",
+      "room": "Lab_K301 (Sức chứa: 45 - Phòng Máy)",
+      "timeslot": "Thứ 4 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "IT302_01",
+      "session": 2,
+      "course_name": "Mạng máy tính",
+      "student_group": "22IT1",
+      "students_count": 45,
+      "teacher": "ThS. Phạm Thị D",
+      "room": "V.A201 (Sức chứa: 50 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 4 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT202_01",
+      "session": 1,
+      "course_name": "Lập trình hướng đối tượng (Nhóm 1)",
+      "student_group": "23IT1",
+      "students_count": 50,
+      "teacher": "ThS. Đỗ Thị K",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 4 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT301_01",
+      "session": 1,
+      "course_name": "Trí tuệ nhân tạo (Nhóm 1)",
+      "student_group": "22IT1",
+      "students_count": 45,
+      "teacher": "TS. Nguyễn Văn A",
+      "room": "V.A201 (Sức chứa: 50 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 4 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "IT304_01",
+      "session": 2,
+      "course_name": "Phát triển ứng dụng Web",
+      "student_group": "22IT2",
+      "students_count": 48,
+      "teacher": "ThS. Võ Thị F",
+      "room": "Lab_K302 (Sức chứa: 50 - Phòng Máy)",
+      "timeslot": "Thứ 4 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "IT202_02",
+      "session": 1,
+      "course_name": "Lập trình hướng đối tượng (Nhóm 2)",
+      "student_group": "23IT2",
+      "students_count": 44,
+      "teacher": "ThS. Đỗ Thị K",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 4 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "MA201_02",
+      "session": 1,
+      "course_name": "Toán rời rạc (Nhóm 2)",
+      "student_group": "24IT2",
+      "students_count": 42,
+      "teacher": "TS. Hoàng Văn E",
+      "room": "V.A201 (Sức chứa: 50 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 4 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "IT303_02",
+      "session": 2,
+      "course_name": "Công nghệ phần mềm (Nhóm 2)",
+      "student_group": "22IT2",
+      "students_count": 48,
+      "teacher": "TS. Lê Văn C",
+      "room": "V.A201 (Sức chứa: 50 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 5 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "EN201_01",
+      "session": 1,
+      "course_name": "Tiếng Anh chuyên ngành (Ghép 22IT)",
+      "student_group": "22IT1, 22IT2",
+      "students_count": 93,
+      "teacher": "ThS. Trần Thị B",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 5 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT202L_02",
+      "session": 1,
+      "course_name": "Thực hành Lập trình HĐT (Nhóm 2)",
+      "student_group": "23IT2",
+      "students_count": 44,
+      "teacher": "ThS. Đỗ Thị K",
+      "room": "Lab_K302 (Sức chứa: 50 - Phòng Máy)",
+      "timeslot": "Thứ 5 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT102_02",
+      "session": 1,
+      "course_name": "Lập trình Python (Nhóm 2)",
+      "student_group": "24IT2",
+      "students_count": 42,
+      "teacher": "ThS. Võ Thị F",
+      "room": "Lab_K301 (Sức chứa: 45 - Phòng Máy)",
+      "timeslot": "Thứ 5 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "PE201_01",
+      "session": 2,
+      "course_name": "Kinh tế chính trị (Ghép 23IT)",
+      "student_group": "23IT1, 23IT2",
+      "students_count": 94,
+      "teacher": "ThS. Bùi Thị H",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 5 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "IT102_01",
+      "session": 1,
+      "course_name": "Lập trình Python (Nhóm 1)",
+      "student_group": "24IT1",
+      "students_count": 40,
+      "teacher": "TS. Nguyễn Văn A",
+      "room": "Lab_K302 (Sức chứa: 50 - Phòng Máy)",
+      "timeslot": "Thứ 5 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "IT303_02",
+      "session": 1,
+      "course_name": "Công nghệ phần mềm (Nhóm 2)",
+      "student_group": "22IT2",
+      "students_count": 48,
+      "teacher": "TS. Lê Văn C",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 6 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "IT201_02",
+      "session": 1,
+      "course_name": "Cơ sở dữ liệu (Nhóm 2)",
+      "student_group": "23IT2",
+      "students_count": 44,
+      "teacher": "TS. Ngô Văn I",
+      "room": "V.A201 (Sức chứa: 50 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 6 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "IT301_02",
+      "session": 1,
+      "course_name": "Trí tuệ nhân tạo (Nhóm 2)",
+      "student_group": "22IT2",
+      "students_count": 48,
+      "teacher": "TS. Nguyễn Văn A",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 6 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT101_01",
+      "session": 1,
+      "course_name": "Cấu trúc dữ liệu (Nhóm 1)",
+      "student_group": "24IT1",
+      "students_count": 40,
+      "teacher": "TS. Lê Văn C",
+      "room": "V.A201 (Sức chứa: 50 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 6 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT303_01",
+      "session": 1,
+      "course_name": "Công nghệ phần mềm (Nhóm 1)",
+      "student_group": "22IT1",
+      "students_count": 45,
+      "teacher": "TS. Lê Văn C",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 6 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "IT102_01",
+      "session": 2,
+      "course_name": "Lập trình Python (Nhóm 1)",
+      "student_group": "24IT1",
+      "students_count": 40,
+      "teacher": "TS. Nguyễn Văn A",
+      "room": "Lab_K302 (Sức chứa: 50 - Phòng Máy)",
+      "timeslot": "Thứ 6 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "IT102_02",
+      "session": 2,
+      "course_name": "Lập trình Python (Nhóm 2)",
+      "student_group": "24IT2",
+      "students_count": 42,
+      "teacher": "ThS. Võ Thị F",
+      "room": "Lab_K301 (Sức chứa: 45 - Phòng Máy)",
+      "timeslot": "Thứ 6 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "IT301_01",
+      "session": 2,
+      "course_name": "Trí tuệ nhân tạo (Nhóm 1)",
+      "student_group": "22IT1",
+      "students_count": 45,
+      "teacher": "TS. Nguyễn Văn A",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 6 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "IT202L_01",
+      "session": 2,
+      "course_name": "Thực hành Lập trình HĐT (Nhóm 1)",
+      "student_group": "23IT1",
+      "students_count": 50,
+      "teacher": "ThS. Đỗ Thị K",
+      "room": "Lab_K302 (Sức chứa: 50 - Phòng Máy)",
+      "timeslot": "Thứ 6 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "PH101_01",
+      "session": 1,
+      "course_name": "Triết học Mác-Lênin (Ghép 24IT)",
+      "student_group": "24IT1, 24IT2",
+      "students_count": 82,
+      "teacher": "ThS. Bùi Thị H",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 6 - Ca 4 (Tiết 10-12)"
+    },
+    {
+      "course_id": "IT202L_01",
+      "session": 1,
+      "course_name": "Thực hành Lập trình HĐT (Nhóm 1)",
+      "student_group": "23IT1",
+      "students_count": 50,
+      "teacher": "ThS. Đỗ Thị K",
+      "room": "Lab_K302 (Sức chứa: 50 - Phòng Máy)",
+      "timeslot": "Thứ 7 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "MA201_01",
+      "session": 1,
+      "course_name": "Toán rời rạc (Nhóm 1)",
+      "student_group": "24IT1",
+      "students_count": 40,
+      "teacher": "TS. Hoàng Văn E",
+      "room": "V.B104 (Sức chứa: 100 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 7 - Ca 1 (Tiết 1-3)"
+    },
+    {
+      "course_id": "IT302L_01",
+      "session": 1,
+      "course_name": "Thực hành Mạng máy tính",
+      "student_group": "22IT1",
+      "students_count": 45,
+      "teacher": "ThS. Phạm Thị D",
+      "room": "Lab_K301 (Sức chứa: 45 - Phòng Máy)",
+      "timeslot": "Thứ 7 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT305_01",
+      "session": 1,
+      "course_name": "An toàn thông tin",
+      "student_group": "22IT2",
+      "students_count": 48,
+      "teacher": "TS. Đặng Văn G",
+      "room": "V.A202 (Sức chứa: 60 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 7 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "MA202_02",
+      "session": 1,
+      "course_name": "Xác suất thống kê (Nhóm 2)",
+      "student_group": "23IT2",
+      "students_count": 44,
+      "teacher": "TS. Hoàng Văn E",
+      "room": "V.A201 (Sức chứa: 50 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 7 - Ca 2 (Tiết 4-6)"
+    },
+    {
+      "course_id": "IT302_01",
+      "session": 1,
+      "course_name": "Mạng máy tính",
+      "student_group": "22IT1",
+      "students_count": 45,
+      "teacher": "ThS. Phạm Thị D",
+      "room": "V.A201 (Sức chứa: 50 - Phòng Lý thuyết)",
+      "timeslot": "Thứ 7 - Ca 3 (Tiết 7-9)"
+    },
+    {
+      "course_id": "IT301L_02",
+      "session": 1,
+      "course_name": "Thực hành Trí tuệ nhân tạo (Nhóm 2)",
+      "student_group": "22IT2",
+      "students_count": 48,
+      "teacher": "ThS. Trần Thị B",
+      "room": "Lab_K302 (Sức chứa: 50 - Phòng Máy)",
+      "timeslot": "Thứ 7 - Ca 3 (Tiết 7-9)"
+    }
+  ]
+}

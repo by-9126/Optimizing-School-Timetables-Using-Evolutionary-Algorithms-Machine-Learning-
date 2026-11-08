@@ -1,0 +1,39 @@
+[
+  {"id": "IT301_01",  "name": "Trí tuệ nhân tạo (Nhóm 1)",           "teacher": "GV01", "groups": ["22IT1"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "IT301L_01", "name": "Thực hành Trí tuệ nhân tạo (Nhóm 1)",  "teacher": "GV02", "groups": ["22IT1"], "room_type": "TH", "sessions_per_week": 1},
+  {"id": "IT302_01",  "name": "Mạng máy tính",                        "teacher": "GV04", "groups": ["22IT1"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "IT302L_01", "name": "Thực hành Mạng máy tính",              "teacher": "GV04", "groups": ["22IT1"], "room_type": "TH", "sessions_per_week": 1},
+  {"id": "IT303_01",  "name": "Công nghệ phần mềm (Nhóm 1)",          "teacher": "GV03", "groups": ["22IT1"], "room_type": "LT", "sessions_per_week": 2},
+
+  {"id": "IT301_02",  "name": "Trí tuệ nhân tạo (Nhóm 2)",           "teacher": "GV01", "groups": ["22IT2"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "IT301L_02", "name": "Thực hành Trí tuệ nhân tạo (Nhóm 2)",  "teacher": "GV02", "groups": ["22IT2"], "room_type": "TH", "sessions_per_week": 1},
+  {"id": "IT304_01",  "name": "Phát triển ứng dụng Web",              "teacher": "GV06", "groups": ["22IT2"], "room_type": "TH", "sessions_per_week": 2},
+  {"id": "IT303_02",  "name": "Công nghệ phần mềm (Nhóm 2)",          "teacher": "GV03", "groups": ["22IT2"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "IT305_01",  "name": "An toàn thông tin",                    "teacher": "GV07", "groups": ["22IT2"], "room_type": "LT", "sessions_per_week": 1},
+
+  {"id": "IT201_01",  "name": "Cơ sở dữ liệu (Nhóm 1)",               "teacher": "GV09", "groups": ["23IT1"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "IT201L_01", "name": "Thực hành Cơ sở dữ liệu (Nhóm 1)",     "teacher": "GV09", "groups": ["23IT1"], "room_type": "TH", "sessions_per_week": 1},
+  {"id": "IT202_01",  "name": "Lập trình hướng đối tượng (Nhóm 1)",   "teacher": "GV10", "groups": ["23IT1"], "room_type": "LT", "sessions_per_week": 1},
+  {"id": "IT202L_01", "name": "Thực hành Lập trình HĐT (Nhóm 1)",     "teacher": "GV10", "groups": ["23IT1"], "room_type": "TH", "sessions_per_week": 2},
+  {"id": "MA202_01",  "name": "Xác suất thống kê (Nhóm 1)",           "teacher": "GV05", "groups": ["23IT1"], "room_type": "LT", "sessions_per_week": 2},
+
+  {"id": "IT201_02",  "name": "Cơ sở dữ liệu (Nhóm 2)",               "teacher": "GV09", "groups": ["23IT2"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "IT201L_02", "name": "Thực hành Cơ sở dữ liệu (Nhóm 2)",     "teacher": "GV09", "groups": ["23IT2"], "room_type": "TH", "sessions_per_week": 1},
+  {"id": "IT202_02",  "name": "Lập trình hướng đối tượng (Nhóm 2)",   "teacher": "GV10", "groups": ["23IT2"], "room_type": "LT", "sessions_per_week": 1},
+  {"id": "IT202L_02", "name": "Thực hành Lập trình HĐT (Nhóm 2)",     "teacher": "GV10", "groups": ["23IT2"], "room_type": "TH", "sessions_per_week": 2},
+  {"id": "MA202_02",  "name": "Xác suất thống kê (Nhóm 2)",           "teacher": "GV05", "groups": ["23IT2"], "room_type": "LT", "sessions_per_week": 2},
+
+  {"id": "IT101_01",  "name": "Cấu trúc dữ liệu (Nhóm 1)",            "teacher": "GV03", "groups": ["24IT1"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "IT101L_01", "name": "Thực hành Cấu trúc dữ liệu (Nhóm 1)",  "teacher": "GV08", "groups": ["24IT1"], "room_type": "TH", "sessions_per_week": 1},
+  {"id": "MA201_01",  "name": "Toán rời rạc (Nhóm 1)",                "teacher": "GV05", "groups": ["24IT1"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "IT102_01",  "name": "Lập trình Python (Nhóm 1)",            "teacher": "GV01", "groups": ["24IT1"], "room_type": "TH", "sessions_per_week": 2},
+
+  {"id": "IT101_02",  "name": "Cấu trúc dữ liệu (Nhóm 2)",            "teacher": "GV07", "groups": ["24IT2"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "IT101L_02", "name": "Thực hành Cấu trúc dữ liệu (Nhóm 2)",  "teacher": "GV08", "groups": ["24IT2"], "room_type": "TH", "sessions_per_week": 1},
+  {"id": "MA201_02",  "name": "Toán rời rạc (Nhóm 2)",                "teacher": "GV05", "groups": ["24IT2"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "IT102_02",  "name": "Lập trình Python (Nhóm 2)",            "teacher": "GV06", "groups": ["24IT2"], "room_type": "TH", "sessions_per_week": 2},
+
+  {"id": "EN201_01",  "name": "Tiếng Anh chuyên ngành (Ghép 22IT)",   "teacher": "GV02", "groups": ["22IT1", "22IT2"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "PE201_01",  "name": "Kinh tế chính trị (Ghép 23IT)",        "teacher": "GV08", "groups": ["23IT1", "23IT2"], "room_type": "LT", "sessions_per_week": 2},
+  {"id": "PH101_01",  "name": "Triết học Mác-Lênin (Ghép 24IT)",      "teacher": "GV08", "groups": ["24IT1", "24IT2"], "room_type": "LT", "sessions_per_week": 2}
+]

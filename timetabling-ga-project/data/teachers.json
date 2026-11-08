@@ -1,0 +1,22 @@
+[
+  {"id": "GV01", "name": "TS. Nguyễn Văn A", "short": "N.V.A",
+   "busy": [{"day": 7, "shifts": [1, 2, 3, 4]}, {"day": 2, "shifts": [4]}]},
+  {"id": "GV02", "name": "ThS. Trần Thị B", "short": "T.T.B",
+   "busy": [{"day": 3, "shifts": [3, 4]}, {"day": 5, "shifts": [3, 4]}]},
+  {"id": "GV03", "name": "TS. Lê Văn C", "short": "L.V.C",
+   "busy": [{"day": 3, "shifts": [1, 2]}, {"day": 7, "shifts": [1, 2, 3, 4]}]},
+  {"id": "GV04", "name": "ThS. Phạm Thị D", "short": "P.T.D",
+   "busy": [{"day": 5, "shifts": [1, 2, 3, 4]}]},
+  {"id": "GV05", "name": "TS. Hoàng Văn E", "short": "H.V.E",
+   "busy": [{"day": 6, "shifts": [1, 2, 3, 4]}, {"day": 7, "shifts": [3, 4]}]},
+  {"id": "GV06", "name": "ThS. Võ Thị F", "short": "V.T.F",
+   "busy": [{"day": 2, "shifts": [1, 2]}, {"day": 7, "shifts": [1, 2, 3, 4]}]},
+  {"id": "GV07", "name": "TS. Đặng Văn G", "short": "Đ.V.G",
+   "busy": [{"day": 2, "shifts": [3, 4]}, {"day": 4, "shifts": [3, 4]}]},
+  {"id": "GV08", "name": "ThS. Bùi Thị H", "short": "B.T.H",
+   "busy": [{"day": 7, "shifts": [1, 2, 3, 4]}]},
+  {"id": "GV09", "name": "TS. Ngô Văn I", "short": "N.V.I",
+   "busy": [{"day": 4, "shifts": [1, 2]}, {"day": 6, "shifts": [3, 4]}]},
+  {"id": "GV10", "name": "ThS. Đỗ Thị K", "short": "Đ.T.K",
+   "busy": [{"day": 2, "shifts": [1, 2, 3, 4]}, {"day": 7, "shifts": [3, 4]}]}
+]

@@ -1,0 +1,25 @@
+Bài toán : 31 lớp học phần (52 buổi/tuần, 17 buổi thực hành) | 10 giảng viên | 5 phòng | 6 lớp SV | 24 khung giờ (6 ngày x 4 ca)
+Thuật toán: GA + Đột biến định hướng (Guided GA)
+Tham số  : pop_size=200, generations=300, mutation_rate=0.05, elitism=2, tournament_k=3, seed=11
+--------------------------------------------------------------------------------------------------------------
+[Khởi tạo F0 | Pop Size = 200] Best Fitness:  380.2/1000 (Lỗi cứng: 15, Lỗi mềm: 18) | Avg Fitness:  278.3 | Hợp lệ:   0.0%
+[Thế hệ    1] Best Fitness:  833.3/1000 (Lỗi cứng:  0, Lỗi mềm: 25) | Avg Fitness:  562.0 | Hợp lệ:   0.5%  <-- Đạt TKB hợp lệ đầu tiên!
+[Thế hệ   25] Best Fitness:  956.9/1000 (Lỗi cứng:  0, Lỗi mềm:  8) | Avg Fitness:  759.6 | Hợp lệ:  19.0%
+[Thế hệ   50] Best Fitness:  985.2/1000 (Lỗi cứng:  0, Lỗi mềm:  3) | Avg Fitness:  827.7 | Hợp lệ:  28.5%
+[Thế hệ   75] Best Fitness:  995.0/1000 (Lỗi cứng:  0, Lỗi mềm:  1) | Avg Fitness:  855.3 | Hợp lệ:  37.0%
+[Thế hệ  100] Best Fitness:  995.0/1000 (Lỗi cứng:  0, Lỗi mềm:  1) | Avg Fitness:  870.5 | Hợp lệ:  39.0%
+[Thế hệ  109] Best Fitness: 1000.0/1000 (Lỗi cứng:  0, Lỗi mềm:  0) | Avg Fitness:  874.6 | Hợp lệ:  42.0%  <-- Đạt 1000 điểm: 0 lỗi cứng & 0 lỗi mềm!
+Hoàn thành 109 thế hệ trong 10.3s | 21754 lần đánh giá fitness | Lời giải tốt nhất tìm thấy ở thế hệ 109
+================================================================================
+BÁO CÁO KIỂM TRA CHẤT LƯỢNG THỜI KHÓA BIỂU TỐI ƯU:
+- Trùng phòng học cùng ca             : 0 lỗi (ĐẠT ✓)
+- Trùng giảng viên cùng ca            : 0 lỗi (ĐẠT ✓)
+- Trùng lớp sinh viên cùng ca         : 0 lỗi (ĐẠT ✓)
+- Vượt sức chứa / Sai loại phòng học  : 0 lỗi (ĐẠT ✓)
+- [Mềm] GV/SV học quá 3 ca liên tiếp        : 0 lỗi nhỏ (-0 điểm)
+- [Mềm] Các buổi cùng môn dồn chung 1 ngày  : 0 lỗi nhỏ (-0 điểm)
+- [Mềm] Xếp vào giờ giảng viên đăng ký bận  : 0 lỗi nhỏ (-0 điểm)
+- [Mềm] Sinh viên bị lủng ca trong ngày     : 0 lỗi nhỏ (-0 điểm)
+- Tổng điểm phạt: 0  =>  Fitness = 1000.0 / 1000
+=> KẾT LUẬN: Thời khóa biểu hoàn toàn khả thi để áp dụng thực tế!
+================================================================================

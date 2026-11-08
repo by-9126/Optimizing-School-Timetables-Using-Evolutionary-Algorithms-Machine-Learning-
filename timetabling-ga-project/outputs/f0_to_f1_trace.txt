@@ -1,0 +1,126 @@
+====================================================================================================
+MINH HỌA 1 VÒNG TIẾN HÓA F0 -> F1 CHO BÀI TOÁN XẾP THỜI KHÓA BIỂU (theo mẫu Slide 14-23)
+====================================================================================================
+Dữ liệu: 31 lớp học phần (52 buổi/tuần, 17 buổi thực hành) | 10 giảng viên | 5 phòng | 6 lớp SV | 24 khung giờ (6 ngày x 4 ca)
+Mỗi cá thể = 52 gen, gen i = (Phòng, Khung giờ) của buổi học thứ i. Ký hiệu: Phòng@Thứ-Ca, vd V.A201@T2-C1 = phòng V.A201, Thứ 2, Ca 1.
+Fitness = 1000 x 1000 / (1000 + 100 x lỗi_cứng + điểm_phạt_mềm)
+
+BƯỚC 1 - KHỞI TẠO QUẦN THỂ F0 (4 cá thể ngẫu nhiên, đã lọc phòng đủ sức chứa)
+----------------------------------------------------------------------------------------------------
+  TKB A: Fitness =  280.9 | Lỗi cứng = 24 (phòng 8, GV 3, lớp SV 13, sức chứa 0) | Lỗi mềm = 19 (-160 điểm)
+      ⚠ Trùng Phòng V.A201 lúc T2-C1: IT301_01#1, IT302_01#1
+      ⚠ Trùng Lớp SV 22IT1 lúc T2-C1: IT301_01#1, IT302_01#1, EN201_01#2
+      ⚠ Trùng Phòng V.B104 lúc T7-C4: IT301_01#2, IT202_02, PE201_01#1
+      ⚠ Trùng Phòng V.A202 lúc T3-C4: IT303_01#1, IT303_02#1
+      ⚠ Trùng GV TS. Lê Văn C lúc T3-C4: IT303_01#1, IT303_02#1
+      ⚠ Trùng Lớp SV 22IT2 lúc T4-C1: IT301_02#2, IT301L_02
+      ... và 16 xung đột khác
+  TKB B: Fitness =  282.9 | Lỗi cứng = 23 (phòng 6, GV 5, lớp SV 12, sức chứa 0) | Lỗi mềm = 28 (-235 điểm)
+      ⚠ Trùng Lớp SV 22IT1 lúc T6-C3: IT301_01#2, IT302L_01, EN201_01#1
+      ⚠ Trùng Lớp SV 22IT1 lúc T5-C4: IT301L_01, IT302_01#2
+      ⚠ Trùng Phòng V.A202 lúc T3-C4: IT303_01#1, MA202_01#2
+      ⚠ Trùng Phòng Lab_K302 lúc T6-C4: IT301L_02, IT202L_01#1
+      ⚠ Trùng Lớp SV 22IT2 lúc T2-C2: IT304_01#1, IT303_02#2
+      ⚠ Trùng Phòng V.B104 lúc T7-C3: IT305_01, PH101_01#2
+      ... và 14 xung đột khác
+  TKB C: Fitness =  224.5 | Lỗi cứng = 32 (phòng 13, GV 8, lớp SV 11, sức chứa 0) | Lỗi mềm = 29 (-255 điểm)
+      ⚠ Trùng Phòng V.B104 lúc T4-C3: IT301_01#1, PH101_01#1
+      ⚠ Trùng Lớp SV 22IT1 lúc T4-C3: IT301_01#1, IT302_01#1
+      ⚠ Trùng Phòng V.A202 lúc T6-C4: IT301_01#2, MA202_01#1, MA201_01#1
+      ⚠ Trùng Phòng V.A202 lúc T4-C3: IT302_01#1, MA201_02#1
+      ⚠ Trùng Lớp SV 22IT1 lúc T3-C2: IT302L_01, EN201_01#1
+      ⚠ Trùng Phòng V.A201 lúc T5-C3: IT303_01#1, IT202_02
+      ... và 17 xung đột khác
+  TKB D: Fitness =  257.1 | Lỗi cứng = 27 (phòng 11, GV 5, lớp SV 11, sức chứa 0) | Lỗi mềm = 25 (-190 điểm)
+      ⚠ Trùng Phòng V.A201 lúc T4-C1: IT301_01#1, IT101_02#1
+      ⚠ Trùng Phòng V.A202 lúc T3-C2: IT302_01#2, IT101_01#1
+      ⚠ Trùng Phòng V.A201 lúc T3-C1: IT301_02#1, IT201_02#1
+      ⚠ Trùng Lớp SV 22IT2 lúc T7-C1: IT301L_02, IT305_01
+      ⚠ Trùng Phòng Lab_K302 lúc T5-C2: IT304_01#2, IT102_02#2
+      ⚠ Trùng GV ThS. Võ Thị F lúc T5-C2: IT304_01#2, IT102_02#2
+      ... và 19 xung đột khác
+  => F0: Fitness tốt nhất = 282.9, trung bình = 261.3
+
+BƯỚC 2 - CHỌN LỌC ĐẤU GIẢI (tournament, k = 3)
+----------------------------------------------------------------------------------------------------
+  Lượt 1: bốc ngẫu nhiên [A(280.9), C(224.5), D(257.1)] -> thắng: TKB A
+  Lượt 2: bốc ngẫu nhiên [A(280.9), B(282.9), C(224.5)] -> thắng: TKB B
+  => Cha = TKB A, Mẹ = TKB B
+
+BƯỚC 3 - LAI GHÉP CẮT 1 ĐIỂM tại vị trí cut = 48: Con = Cha[0:48] + Mẹ[48:52]
+BƯỚC 4 - ĐỘT BIẾN (xác suất 5%/gen): đổi Phòng hoặc Ca học của gen được chọn
+----------------------------------------------------------------------------------------------------
+    # Buổi học      Cha (A)              Mẹ (B)               Con (sau lai ghép)     Con (sau đột biến)    
+    0 IT301_01#1    ⚠V.A201@T2-C1         V.A202@T3-C2        ⚠V.A201@T2-C1 ←Cha     ⚠V.A201@T2-C1         
+    1 IT301_01#2    ⚠V.B104@T7-C4        ⚠V.A202@T6-C3        ⚠V.B104@T7-C4 ←Cha     ⚠V.B104@T7-C4         
+    2 IT301L_01      Lab_K301@T3-C2      ⚠Lab_K302@T5-C4       Lab_K301@T3-C2 ←Cha    Lab_K301@T3-C2       
+    3 IT302_01#1    ⚠V.A201@T2-C1         V.A201@T6-C1        ⚠V.A201@T2-C1 ←Cha     ⚠V.A201@T2-C1         
+    4 IT302_01#2     V.A201@T7-C2        ⚠V.A201@T5-C4         V.A201@T7-C2 ←Cha      V.A201@T7-C2         
+    5 IT302L_01      Lab_K301@T7-C3      ⚠Lab_K301@T6-C3       Lab_K301@T7-C3 ←Cha    Lab_K301@T7-C3       
+    6 IT303_01#1    ⚠V.A202@T3-C4        ⚠V.A202@T3-C4        ⚠V.A202@T3-C4 ←Cha     ⚠V.A202@T3-C4         
+    7 IT303_01#2     V.A201@T4-C3         V.B104@T5-C3         V.A201@T4-C3 ←Cha      V.A201@T4-C3         
+    8 IT301_02#1     V.A202@T7-C3         V.B104@T7-C4         V.A202@T7-C3 ←Cha      V.A202@T7-C3         
+    9 IT301_02#2    ⚠V.A202@T4-C1         V.A202@T7-C2        ⚠V.A202@T4-C1 ←Cha     ⚠V.A202@T4-C1         
+   10 IT301L_02     ⚠Lab_K302@T4-C1      ⚠Lab_K302@T6-C4      ⚠Lab_K302@T4-C1 ←Cha   ⚠Lab_K302@T4-C1       
+   11 IT304_01#1    ⚠Lab_K302@T3-C4      ⚠Lab_K302@T2-C2      ⚠Lab_K302@T3-C4 ←Cha   ⚠Lab_K302@T3-C4       
+   12 IT304_01#2     Lab_K302@T4-C4       Lab_K302@T7-C1       Lab_K302@T4-C4 ←Cha    Lab_K302@T6-C2 ★     
+   13 IT303_02#1    ⚠V.A202@T3-C4         V.A202@T5-C2        ⚠V.A202@T3-C4 ←Cha     ⚠V.A201@T3-C4 ★       
+   14 IT303_02#2     V.A202@T7-C4        ⚠V.A202@T2-C2         V.A202@T7-C4 ←Cha      V.A202@T7-C4         
+   15 IT305_01       V.B104@T5-C2        ⚠V.B104@T7-C3         V.B104@T5-C2 ←Cha      V.B104@T5-C2         
+   16 IT201_01#1    ⚠V.A201@T6-C3        ⚠V.A202@T6-C4        ⚠V.A201@T6-C3 ←Cha     ⚠V.A201@T6-C3         
+   17 IT201_01#2     V.A202@T5-C2         V.A202@T4-C2         V.A202@T5-C2 ←Cha      V.A202@T5-C2         
+   18 IT201L_01     ⚠Lab_K302@T2-C3       Lab_K302@T5-C2      ⚠Lab_K302@T2-C3 ←Cha   ⚠Lab_K302@T2-C3       
+   19 IT202_01      ⚠V.A202@T6-C3         V.A202@T2-C1        ⚠V.A202@T6-C3 ←Cha     ⚠V.A202@T6-C3         
+   20 IT202L_01#1   ⚠Lab_K302@T5-C3      ⚠Lab_K302@T6-C4      ⚠Lab_K302@T5-C3 ←Cha   ⚠Lab_K302@T5-C3       
+   21 IT202L_01#2    Lab_K302@T7-C3      ⚠Lab_K302@T6-C1       Lab_K302@T7-C3 ←Cha    Lab_K302@T7-C3       
+   22 MA202_01#1    ⚠V.B104@T5-C3        ⚠V.A201@T3-C1        ⚠V.B104@T5-C3 ←Cha     ⚠V.B104@T5-C3         
+   23 MA202_01#2    ⚠V.A202@T2-C3        ⚠V.A202@T3-C4        ⚠V.A202@T2-C3 ←Cha     ⚠V.A202@T2-C3         
+   24 IT201_02#1     V.A202@T2-C1        ⚠V.A202@T6-C1         V.A202@T2-C1 ←Cha      V.A202@T2-C1         
+   25 IT201_02#2    ⚠V.A201@T3-C1        ⚠V.A202@T4-C3        ⚠V.A201@T3-C1 ←Cha     ⚠V.A201@T3-C1         
+   26 IT201L_02      Lab_K301@T6-C4       Lab_K301@T7-C2       Lab_K301@T6-C4 ←Cha    Lab_K301@T6-C4       
+   27 IT202_02      ⚠V.B104@T7-C4        ⚠V.B104@T4-C3        ⚠V.B104@T7-C4 ←Cha     ⚠V.B104@T7-C4         
+   28 IT202L_02#1   ⚠Lab_K301@T4-C2      ⚠Lab_K302@T4-C3      ⚠Lab_K301@T4-C2 ←Cha   ⚠Lab_K301@T4-C2       
+   29 IT202L_02#2   ⚠Lab_K302@T3-C1      ⚠Lab_K301@T6-C4      ⚠Lab_K302@T3-C1 ←Cha   ⚠Lab_K302@T3-C1       
+   30 MA202_02#1     V.A201@T2-C4         V.A202@T7-C3         V.A201@T2-C4 ←Cha      V.A201@T2-C4         
+   31 MA202_02#2     V.A202@T2-C2        ⚠V.A201@T4-C3         V.A202@T2-C2 ←Cha      V.A202@T2-C2         
+   32 IT101_01#1     V.A201@T5-C3         V.A201@T3-C2         V.A201@T5-C3 ←Cha      V.A201@T5-C3         
+   33 IT101_01#2    ⚠V.B104@T6-C2        ⚠V.B104@T6-C1        ⚠V.B104@T6-C2 ←Cha     ⚠V.B104@T6-C2         
+   34 IT101L_01      Lab_K302@T5-C1       Lab_K301@T7-C4       Lab_K302@T5-C1 ←Cha    Lab_K302@T5-C1       
+   35 MA201_01#1     V.B104@T3-C4        ⚠V.B104@T5-C1        ⚠V.B104@T3-C4 ←Cha     ⚠V.B104@T3-C4         
+   36 MA201_01#2    ⚠V.A201@T6-C2        ⚠V.A202@T3-C1        ⚠V.A201@T6-C2 ←Cha     ⚠V.A201@T6-C2         
+   37 IT102_01#1    ⚠Lab_K302@T2-C3       Lab_K302@T2-C4      ⚠Lab_K302@T2-C3 ←Cha   ⚠Lab_K302@T2-C3       
+   38 IT102_01#2    ⚠Lab_K301@T4-C2      ⚠Lab_K302@T4-C3      ⚠Lab_K301@T4-C2 ←Cha   ⚠Lab_K301@T4-C2       
+   39 IT101_02#1     V.A202@T3-C2         V.A202@T7-C4         V.A202@T3-C2 ←Cha      V.A202@T3-C2         
+   40 IT101_02#2     V.B104@T4-C3         V.B104@T6-C2         V.B104@T4-C3 ←Cha      V.B104@T4-C3         
+   41 IT101L_02      Lab_K302@T5-C4      ⚠Lab_K302@T6-C3       Lab_K302@T5-C4 ←Cha    Lab_K302@T5-C4       
+   42 MA201_02#1    ⚠V.A202@T5-C3        ⚠V.A201@T5-C1        ⚠V.A202@T5-C3 ←Cha     ⚠V.A202@T5-C3         
+   43 MA201_02#2     V.A201@T4-C1         V.B104@T2-C1         V.A201@T4-C1 ←Cha      V.A201@T4-C1         
+   44 IT102_02#1    ⚠Lab_K302@T3-C1       Lab_K301@T3-C1      ⚠Lab_K302@T3-C1 ←Cha   ⚠Lab_K302@T3-C1       
+   45 IT102_02#2     Lab_K301@T7-C2       Lab_K302@T3-C2       Lab_K301@T7-C2 ←Cha    Lab_K301@T7-C2       
+   46 EN201_01#1     V.B104@T5-C1        ⚠V.B104@T6-C3         V.B104@T5-C1 ←Cha      V.B104@T5-C1         
+   47 EN201_01#2    ⚠V.B104@T2-C1         V.B104@T4-C4        ⚠V.B104@T2-C1 ←Cha     ⚠V.B104@T2-C1         
+  ---------------------------------------- ✂ ĐIỂM CẮT (cut = 48) ------------------------------------
+   48 PE201_01#1    ⚠V.B104@T7-C4        ⚠V.B104@T3-C4        ⚠V.B104@T3-C4 ←Mẹ      ⚠V.B104@T3-C4         
+   49 PE201_01#2    ⚠V.B104@T4-C2        ⚠V.B104@T6-C1         V.B104@T6-C1 ←Mẹ       V.B104@T6-C1         
+   50 PH101_01#1    ⚠V.B104@T2-C2        ⚠V.B104@T6-C3         V.B104@T6-C3 ←Mẹ       V.B104@T6-C3         
+   51 PH101_01#2    ⚠V.B104@T2-C2        ⚠V.B104@T7-C3         V.B104@T7-C3 ←Mẹ       V.B104@T7-C3         
+  (⚠ = gen đang dính xung đột cứng; ★ = gen bị đột biến)
+  Đột biến gen 12 (IT304_01#2): Lab_K302@T4-C4 -> Lab_K302@T6-C2
+  Đột biến gen 13 (IT303_02#1): V.A202@T3-C4 -> V.A201@T3-C4
+
+BƯỚC 5 - SO SÁNH CHA, MẸ VÀ CON
+----------------------------------------------------------------------------------------------------
+  Cha A       : Fitness  280.9 | lỗi cứng 24 | lỗi mềm 19
+  Mẹ  B       : Fitness  282.9 | lỗi cứng 23 | lỗi mềm 28
+  Con (lai ghép) : Fitness  336.1 | lỗi cứng 18 | lỗi mềm 23   <-- TỐT HƠN CẢ CHA LẪN MẸ!
+  Con (đột biến) : Fitness  349.0 | lỗi cứng 17 | lỗi mềm 21
+  Giải thích: nửa đầu của Cha và nửa sau của Mẹ là các 'khối gen' ít xung đột; ghép lại loại bỏ được các cặp trùng lịch nằm ở nửa kém của mỗi bên.
+
+BƯỚC 6 - QUẦN THỂ F1 (Tinh hoa giữ 2 cá thể tốt nhất F0 + 2 cá thể con)
+----------------------------------------------------------------------------------------------------
+  Tinh hoa B        : Fitness  282.9 | lỗi cứng 23 | lỗi mềm 28
+  Tinh hoa A        : Fitness  280.9 | lỗi cứng 24 | lỗi mềm 19
+  Con 1 (Cha|Mẹ)    : Fitness  349.0 | lỗi cứng 17 | lỗi mềm 21
+  Con 2 (Mẹ|Cha)    : Fitness  290.3 | lỗi cứng 22 | lỗi mềm 29
+  => F1: Fitness tốt nhất = 349.0, trung bình = 300.8  (F0: 282.9 / 261.3)
+====================================================================================================
